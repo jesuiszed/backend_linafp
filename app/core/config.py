@@ -12,7 +12,7 @@ class Settings(BaseSettings):
     jwt_algorithm: str = "HS256"
     access_token_expire_minutes: int = 60
     refresh_token_expire_minutes: int = 10080
-    cors_origins: str = "http://localhost:5173"
+    cors_origins: str = "http://localhost:3000,http://localhost:5173,https://linafp.pythonanywhere.com"
 
     @property
     def cors_origins_list(self) -> list[str]:
