@@ -8,7 +8,7 @@ class Settings(BaseSettings):
     env: str = "development"
     app_name: str = "LINAFP API"
     api_v1_prefix: str = "/api/v1"
-    database_url: str = "postgresql+psycopg://postgres:postgres@localhost:5432/linafp"
+    database_url: str = "sqlite:///./linafp.db"
     secret_key: str = "change-me"
     jwt_algorithm: str = "HS256"
     access_token_expire_minutes: int = 60
